@@ -37,9 +37,9 @@ def get_soup(domain):
 def pic_yellow(picture):
     from qcloud_image import Client
     from qcloud_image import CIUrl, CIFile, CIBuffer, CIUrls, CIFiles, CIBuffers
-    appid = '1254082689'
-    secret_id = 'AKID663puGvZFsafr9FnFcWYeaeomAebD0Rj'
-    secret_key = 'erAcykbYMH4cK7maDwmSB4zz5eJwmT08'
+    appid = app_id
+    secret_id = secret_id
+    secret_key = secret_key
     bucket = 'ws01'
 
     client = Client(appid, secret_id, secret_key, bucket)
@@ -144,7 +144,6 @@ if __name__ == '__main__':
         for x in subfile:
             domainurl.append(x.strip())
 
-    # domainurl = ['708.58souso.com', '718.58souso.com', 'www.58souso.com', 'www.aimochen.com', 'www.tenglongbizhi.com', '722.58souso.com', '702.58souso.com', '726.58souso.com', '714.58souso.com', 'zzz.hld360.com', 'www.lalacs.com', 'xz.azwy.cn', 'www.azwy.cn', 'www.hld360.com', 'ddd.58souso.com']
     print("%sIP %s  map these domains: %s%s%s" %('\033[93m', ip, '\033[91m', list(set(domainurl)), '\033[0m'))
     print("%sNow check the illegal word of content: %s" %('\033[91m','\033[0m'))
     for url in domainurl:
