@@ -1,0 +1,7 @@
+argparse=1.4.0
+beautifulsoup4==4.6.0
+dnspython==1.15.0
+Pillow==4.2.1
+qcloud-image==1.0.0
+requests==2.17.3
+shadowsocks==2.8.2
